@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor Challenges</title>
+  <meta name="description" content="Colección de retos de Frontend Mentor resueltos con HTML y CSS." />
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1120;
+      --bg-alt: #0f172a;
+      --card: rgba(255, 255, 255, 0.06);
+      --border: rgba(255, 255, 255, 0.14);
+      --hover: rgba(255, 255, 255, 0.12);
+      --primary: #7dd3fc;
+      --white: #fff;
+      --gray: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 15% 10%, rgba(125, 211, 252, 0.12), transparent 45%),
+        radial-gradient(circle at 85% 90%, rgba(245, 158, 11, 0.10), transparent 45%),
+        linear-gradient(180deg, var(--bg-alt), var(--bg));
+      padding: 64px 24px;
+    }
+    .wrapper { max-width: 960px; margin: 0 auto; }
+    header { margin-bottom: 48px; }
+    h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+    header p { color: var(--gray); margin: 0; font-size: 16px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    a.card {
+      display: block;
+      padding: 24px;
+      border-radius: 16px;
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      color: var(--white);
+      text-decoration: none;
+      transition: 0.2s transform, 0.2s background-color, 0.2s border-color;
+    }
+    a.card:hover {
+      transform: translateY(-4px);
+      background-color: var(--hover);
+      border-color: var(--primary);
+    }
+    a.card h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+    a.card p {
+      margin: 0;
+      color: var(--gray);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+    }
+    footer {
+      margin-top: 56px;
+      text-align: center;
+      color: var(--gray);
+      font-size: 14px;
+    }
+    footer a { color: var(--primary); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Frontend Mentor Challenges</h1>
+      <p>Retos de <a href="https://www.frontendmentor.io/" target="_blank" rel="noreferrer" style="color: var(--primary)">Frontend Mentor</a> resueltos con HTML y CSS puro.</p>
+    </header>
+
+    <section class="grid">
+      <a class="card" href="./easybank-landing-page-master/">
+        <h2>Easybank landing page</h2>
+        <p>Landing page responsive para un banco digital.</p>
+        <span class="badge">Ver proyecto →</span>
+      </a>
+      <a class="card" href="./fylo-data-storage-component-master/">
+        <h2>Fylo data storage component</h2>
+        <p>Componente de almacenamiento con barra de progreso.</p>
+        <span class="badge">Ver proyecto →</span>
+      </a>
+      <a class="card" href="./fylo-landing-page-with-two-column-layout-master/">
+        <h2>Fylo landing page (two column layout)</h2>
+        <p>Landing page con layout de dos columnas.</p>
+        <span class="badge">Ver proyecto →</span>
+      </a>
+      <a class="card" href="./huddle-landing-page-with-single-introductory-section-master/">
+        <h2>Huddle landing page</h2>
+        <p>Landing page de una sola sección introductoria.</p>
+        <span class="badge">Ver proyecto →</span>
+      </a>
+      <a class="card" href="./intro-component-with-signup-form-master/">
+        <h2>Intro component with sign up form</h2>
+        <p>Componente introductorio con formulario de registro.</p>
+        <span class="badge">Ver proyecto →</span>
+      </a>
+      <a class="card" href="./ping-coming-soon-page-master/">
+        <h2>Ping coming soon page</h2>
+        <p>Página "próximamente" con formulario de suscripción.</p>
+        <span class="badge">Ver proyecto →</span>
+      </a>
+      <a class="card" href="./single-price-grid-component-master/">
+        <h2>Single price grid component</h2>
+        <p>Tarjeta de precios con secciones destacadas.</p>
+        <span class="badge">Ver proyecto →</span>
+      </a>
+      <a class="card" href="https://jesusgabri3l.github.io/sunnyside-landingpage/" target="_blank" rel="noreferrer">
+        <h2>Sunnyside landing page</h2>
+        <p>Landing page multi-sección con testimonios y footer.</p>
+        <span class="badge">Ver proyecto →</span>
+      </a>
+    </section>
+
+    <footer>
+      <p>Repo en <a href="https://github.com/jesusgabri3l/frontend-mentor-challenges" target="_blank" rel="noreferrer">GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
