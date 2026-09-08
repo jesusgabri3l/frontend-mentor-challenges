@@ -4,41 +4,48 @@
 body{
 	background: rgb(20, 28, 76);
 	background-image: url(./images/bg-mobile.svg);
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	  background-repeat: no-repeat;
 	  background-size: cover;
-	  background-position: top center;
+	  background-position: center;
 	  font-family: 'Raleway', sans-serif;
 	  color: white;
+	  margin: 0;
 	}
 
 	.container{
-		max-width: 700px;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 1.5em;
-		margin-top: 20%;
-		width: auto;
+		padding: 1.5rem;
+		width: 80%;
+		display: flex;
+		align-items: center;
+		gap: 32px;
 	}
 
 	.icons{
-		width: auto;
+		width: 50%;
 		background: hsl(228, 56%, 26%);
-		padding:2em 0.2em;
+		padding: 2rem 0.2rem;
 		border-radius: 5px 80px 5px 5px;
 		display: block;
 	}
 
 	li{
 		list-style: none;
-		margin: 0.3em;
+		margin: 0.3rem;
 		display: inline;
 	}
 	h1{
-		margin-left: 1em;
+		margin-left: 1rem;
 	}
 
 	.logo{
-		width: 40%;
+		    width: 120px;
+    		height: auto;
+			padding-left: 1.5rem;
 
 	}
 
@@ -52,7 +59,7 @@ body{
 
 		/*ESTILOS PARA EL DISKPACE*/
 	.diskspace{
-		width: auto;
+		width: 50%;
 		background: hsl(228, 56%, 26%);
 		padding: 2em;
 		border-radius: 5px;
@@ -95,30 +102,27 @@ body{
 		float: right;
 	}
 
-	@media (min-width: 700px) {
+	@media (max-width: 700px) {
 body{
 	background: rgb(20, 28, 76);
 	background-image: url(./images/bg-desktop.svg);
-	background-position: bottom left;
+	background-position: center;
 	background-repeat: no-repeat;
-	  background-size: auto;
+	  background-size: cover;
 	  font-family: 'Raleway', sans-serif;
-
+		height: 100vh;
 	  color: white;	
 	}
 	.container{
-		max-width: 1170px;
-		margin-left: auto;
-		margin-right: auto;
+		width: 100%;
 		padding: 1.5em;
-		margin-top: 8%;
-		margin-left: 15%;
+		flex-direction: column;
 	}
 	
 	/* ESTILOS PARA EL LOGO E ICONO */
 
 	.icons{
-		width: 20em;
+		width: 100%;
 		background: hsl(228, 56%, 26%);
 		padding: 1em;
 		border-radius: 5px 80px 5px 5px;
@@ -145,7 +149,7 @@ body{
 
 		/*ESTILOS PARA EL DISKPACE*/
 	.diskspace{
-		width: 50%;
+		width: 100%;
 		background: hsl(228, 56%, 26%);
 		padding: 2em;
 		border-radius: 5px;

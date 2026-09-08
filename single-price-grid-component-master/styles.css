@@ -103,6 +103,7 @@ button{
 	background: rgb(74, 190, 189);
 	padding: 0.5em 1.5em;
 	color: white;
+	height: 100%;
 }
  
  aside .lastsection h2{
@@ -124,6 +125,8 @@ button{
 
  .headsection, .mainsection, .lastsection{
  		padding: 0.5em 3em;
+		height: 100%;
+
  }
 
 
