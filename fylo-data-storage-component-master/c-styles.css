@@ -5,11 +5,10 @@ body{
 	background: rgb(20, 28, 76);
 	background-image: url(./images/bg-mobile.svg);
 	  background-repeat: no-repeat;
-	  background-attachment: fixed;
-	  background-size: auto;
-	  background-position: center;
+	  background-size: cover;
+	  background-position: top center;
 	  font-family: 'Raleway', sans-serif;
-	  color: white;	
+	  color: white;
 	}
 
 	.container{
@@ -102,7 +101,6 @@ body{
 	background-image: url(./images/bg-desktop.svg);
 	background-position: bottom left;
 	background-repeat: no-repeat;
-	  background-attachment: fixed;
 	  background-size: auto;
 	  font-family: 'Raleway', sans-serif;
 

@@ -87,12 +87,11 @@
 }
 .img-first-section{
 	width: 100%;
-	clip-path: inset(12% 17% 0 0);
-	
+
 	background:url(./images/bg-intro-desktop.svg);
 	background-position: top center;
 	background-size: cover;
-	background-repeat: no-repeat; 	
+	background-repeat: no-repeat;
 }
 .b-fs{
 	width: 50%;
